@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* GLOBAL */
 body {
     margin: 0;
@@ -109,3 +110,116 @@ footer {
     padding: 20px;
     font-size: 14px;
 }
+=======
+/* GLOBAL */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Inter, sans-serif;
+    background: #f7f7f9;
+    color: #1a1a1d;
+}
+
+/* HERO SECTION */
+.hero {
+    background: linear-gradient(180deg, #050608, #0d0f14);
+    text-align: center;
+    padding: 80px 20px;
+    color: white;
+}
+
+.small-hero {
+    padding: 40px 20px;
+}
+
+.hero-logo {
+    width: 140px;
+    margin-bottom: 20px;
+}
+
+.hero-logo.small {
+    width: 90px;
+}
+
+.hero-title {
+    font-size: 48px;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+.hero-title.small {
+    font-size: 28px;
+}
+
+.hero-subtitle {
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+.hero-subtitle.small {
+    font-size: 14px;
+}
+
+/* BUTTONS */
+.cta-button {
+    display: inline-block;
+    background: linear-gradient(90deg, #f5c46b, #e8a63b);
+    padding: 14px 28px;
+    color: black;
+    font-weight: bold;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.secondary-button {
+    display: inline-block;
+    margin-top: 12px;
+    color: #f5c46b;
+    text-decoration: none;
+}
+
+/* BODY SECTION */
+.body-section {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.philosophy-list {
+    list-style: none;
+    padding: 0;
+    font-size: 18px;
+}
+
+/* GRID GAME */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 10px;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.grid div {
+    width: 100px;
+    height: 100px;
+    background: #dcdcdc;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+
+.grid div.active-green {
+    background: #00c853;
+}
+
+.grid div.active-red {
+    background: #d50000;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+>>>>>>> 657e601f54a5a8cefaf4845f552c42c1b34b711d
