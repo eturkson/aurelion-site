@@ -1,40 +1,46 @@
-body {
-    margin: 0;
-    background: #0d0d0d;
-    color: #e6e6e6;
-    font-family: 'Inter', sans-serif;
+/* THEME TOKENS — AURELION v0.5 */
+
+:root {
+  --bg-dark: #111;
+  --bg-darker: #0c0c0c;
+  --bg-light: #d0d0d0;
+
+  --text-light: #e6e6e6;
+  --text-dim: #b5b5b5;
+
+  --border-dark: #222;
+
+  --accent: #f5c15c; /* subtle gold accent */
 }
 
+/* GLOBAL */
+body {
+  background: var(--bg-dark);
+  color: var(--text-light);
+  font-family: var(--font-sans);
+}
+
+/* NAV */
 .nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    background: #111;
-    border-bottom: 1px solid #222;
+  background: var(--bg-darker);
+  border-bottom: 1px solid var(--border-dark);
 }
 
 .nav a {
-    margin-left: 20px;
-    color: #e6e6e6;
-    text-decoration: none;
+  color: var(--text-light);
+  text-decoration: none;
+  margin-left: 1rem;
+  opacity: 0.85;
 }
 
-.hero {
-    padding: 120px 40px;
-    text-align: center;
+.nav a:hover {
+  opacity: 1;
 }
 
-.pillars {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    padding: 80px 40px;
-}
-
-.pillar {
-    width: 280px;
-    padding: 20px;
-    background: #111;
-    border: 1px solid #222;
-    border-radius: 8px;
+/* FOOTER */
+footer {
+  padding: 2rem;
+  text-align: center;
+  opacity: 0.6;
+  font-size: 0.9rem;
 }

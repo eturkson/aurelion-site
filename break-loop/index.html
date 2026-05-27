@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AURELION — Break Loop v0.5</title>
+  <link rel="stylesheet" href="../assets/css/theme.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="logo">AURELION</div>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/system/">System</a>
+      <a href="/doctrine/">Doctrine</a>
+      <a href="/cockpit/">Cockpit</a>
+      <a href="/founder/">Founder</a>
+      <a href="/changelog/">Changelog</a>
+      <a href="/break-loop/">Break Loop</a>
+    </nav>
+  </header>
+
+  <main class="bl-main">
+    <section class="section bl-hero">
+      <div class="bl-hero-content">
+        <p class="eyebrow">Break Loop v0.5</p>
+	<h1 class="h1">Reflex. Focus. Execution.</h1>
+	<p class="lead">
+	  Break Loop trains rapid recognition, noise‑filtering, and execution under pressure. Memorize the sequence. Ignore the
+  	  interference. Execute without hesitation.
+	</p>
+
+      </div>
+    </section>
+
+<div class="operator-warning">
+  <p class="body">
+    <strong>Operator Notice:</strong> This module is a cognitive training tool. It is not entertainment. It is designed
+    to sharpen discipline, timing, and focus under controlled pressure.
+  </p>
+</div>
+
+    <section class="section bl-container">
+      <div class="bl-top-bar">
+        <div class="bl-mode-select">
+          <label for="modeSelect" class="body">Mode:</label>
+          <select id="modeSelect" class="bl-select">
+            <option value="adaptive">Adaptive Difficulty</option>
+            <option value="reverse">Reverse Order</option>
+            <option value="interference">Interference</option>
+            <option value="timepressure">Time Pressure</option>
+          </select>
+        </div>
+        <button id="startBtn" class="bl-btn">Start Mission</button>
+      </div>
+
+      <div id="modeBanner" class="Observe the sequence. Filter the noise. Execute with precision.
+	"></div>
+
+      <div class="bl-grid" id="grid">
+        <!-- 3x3 grid cells -->
+        <div class="bl-cell" data-index="0"></div>
+        <div class="bl-cell" data-index="1"></div>
+        <div class="bl-cell" data-index="2"></div>
+        <div class="bl-cell" data-index="3"></div>
+        <div class="bl-cell" data-index="4"></div>
+        <div class="bl-cell" data-index="5"></div>
+        <div class="bl-cell" data-index="6"></div>
+        <div class="bl-cell" data-index="7"></div>
+        <div class="bl-cell" data-index="8"></div>
+      </div>
+
+      <div id="timeBarContainer" class="bl-timebar-container hidden">
+        <div id="timeBar" class="bl-timebar"></div>
+      </div>
+
+      <div class="bl-status">
+        <p class="body" id="statusText">Press "Start Mission" to begin.</p>
+      </div>
+
+      <div class="bl-telemetry">
+        <h2 class="h2">Operator Telemetry</h2>
+        <div class="bl-telemetry-grid">
+          <div>
+            <p class="eyebrow">Accuracy</p>
+            <p class="body" id="telemetryAccuracy">0%</p>
+          </div>
+          <div>
+            <p class="eyebrow">Avg Reaction</p>
+            <p class="body" id="telemetryAvgReaction">0 ms</p>
+          </div>
+          <div>
+            <p class="eyebrow">Mistakes</p>
+            <p class="body" id="telemetryMistakes">0</p>
+          </div>
+          <div>
+            <p class="eyebrow">Rounds</p>
+            <p class="body" id="telemetryRounds">0</p>
+          </div>
+          <div class="bl-curve">
+            <p class="eyebrow">Difficulty Curve</p>
+            <p class="body" id="telemetryCurve">–</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>AURELION — Break Loop v0.5</p>
+  </footer>
+
+  <script src="game.js"></script>
+</body>
+</html>
