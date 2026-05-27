@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    background: #0d0d0d;
+    color: #e6e6e6;
+    font-family: 'Inter', sans-serif;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: #111;
+    border-bottom: 1px solid #222;
+}
+
+.nav a {
+    margin-left: 20px;
+    color: #e6e6e6;
+    text-decoration: none;
+}
+
+.hero {
+    padding: 120px 40px;
+    text-align: center;
+}
+
+.pillars {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 80px 40px;
+}
+
+.pillar {
+    width: 280px;
+    padding: 20px;
+    background: #111;
+    border: 1px solid #222;
+    border-radius: 8px;
+}
