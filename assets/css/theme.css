@@ -1,0 +1,46 @@
+/* THEME TOKENS — AURELION v0.5 */
+
+:root {
+  --bg-dark: #111;
+  --bg-darker: #0c0c0c;
+  --bg-light: #d0d0d0;
+
+  --text-light: #e6e6e6;
+  --text-dim: #b5b5b5;
+
+  --border-dark: #222;
+
+  --accent: #f5c15c; /* subtle gold accent */
+}
+
+/* GLOBAL */
+body {
+  background: var(--bg-dark);
+  color: var(--text-light);
+  font-family: var(--font-sans);
+}
+
+/* NAV */
+.nav {
+  background: var(--bg-darker);
+  border-bottom: 1px solid var(--border-dark);
+}
+
+.nav a {
+  color: var(--text-light);
+  text-decoration: none;
+  margin-left: 1rem;
+  opacity: 0.85;
+}
+
+.nav a:hover {
+  opacity: 1;
+}
+
+/* FOOTER */
+footer {
+  padding: 2rem;
+  text-align: center;
+  opacity: 0.6;
+  font-size: 0.9rem;
+}

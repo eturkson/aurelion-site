@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AURELION — Star Sequence v0.1</title>
+  <link rel="stylesheet" href="../assets/css/theme.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="logo">AURELION</div>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/system/">System</a>
+      <a href="/doctrine/">Doctrine</a>
+      <a href="/cockpit/">Cockpit</a>
+      <a href="/founder/">Founder</a>
+      <a href="/changelog/">Changelog</a>
+      <a href="/games/">Games</a>
+    </nav>
+  </header>
+
+  <main class="ss-main">
+    <section class="section ss-hero">
+      <div class="ss-hero-content">
+        <p class="eyebrow">Star Sequence v0.1</p>
+	<h1 class="h1">Pattern. Classification. Discipline.</h1>
+	<p class="lead">
+  	  Track cosmic events. Identify valid signals. Avoid anomalies. Maintain clarity through every phase of the mission.
+	</p>
+      </div>
+    </section>
+
+<div class="operator-warning">
+  <p class="body">
+    <strong>Operator Notice:</strong> This module is a cognitive training tool. It is not entertainment. It is designed
+    to sharpen discipline, timing, and focus under controlled pressure.
+  </p>
+</div>
+
+    <section class="section ss-container">
+      <div class="ss-top-bar">
+        <div class="ss-phase">
+          <p class="eyebrow">Mission Phase</p>
+          <p class="body" id="phaseLabel">Idle</p>
+        </div>
+        <button id="startBtn" class="ss-btn">Start Mission</button>
+      </div>
+
+      <div id="modeBanner" class="ss-banner">
+        Observe the sequence. Tap valid events. Avoid anomalies.
+      </div>
+
+      <div class="ss-grid" id="cardGrid">
+        <!-- 3x4 grid of cards -->
+      </div>
+
+      <div class="ss-status">
+        <p class="body" id="statusText">Press "Start Mission" to begin.</p>
+      </div>
+
+      <div class="ss-telemetry">
+        <h2 class="h2">Operator Telemetry</h2>
+        <div class="ss-telemetry-grid">
+          <div>
+            <p class="eyebrow">Accuracy</p>
+            <p class="body" id="telemetryAccuracy">0%</p>
+          </div>
+          <div>
+            <p class="eyebrow">Valid Hits</p>
+            <p class="body" id="telemetryHits">0</p>
+          </div>
+          <div>
+            <p class="eyebrow">Anomalies Avoided</p>
+            <p class="body" id="telemetryAvoided">0</p>
+          </div>
+          <div>
+            <p class="eyebrow">Anomaly Mistakes</p>
+            <p class="body" id="telemetryAnomalyMistakes">0</p>
+          </div>
+          <div>
+            <p class="eyebrow">Missions Completed</p>
+            <p class="body" id="telemetryMissions">0</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>AURELION — Star Sequence v0.1</p>
+  </footer>
+
+  <script src="game.js"></script>
+</body>
+</html>

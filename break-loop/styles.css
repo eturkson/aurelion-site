@@ -1,0 +1,164 @@
+/* BREAK LOOP v0.5 — styles */
+
+.bl-main {
+  min-height: 100vh;
+  background: #050505;
+}
+
+.bl-hero {
+  padding: 4rem 1.5rem 2rem;
+  background: #0b0b0b;
+  border-bottom: 1px solid #222;
+}
+
+.bl-hero-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.bl-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 4rem;
+}
+
+.bl-top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.bl-mode-select {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.bl-select {
+  background: #111;
+  color: #e6e6e6;
+  border: 1px solid #333;
+  padding: 0.4rem 0.75rem;
+  border-radius: 4px;
+}
+
+.bl-btn {
+  background: #f5c15c;
+  color: #111;
+  border: none;
+  padding: 0.5rem 1.25rem;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.bl-btn:hover {
+  filter: brightness(1.05);
+}
+
+.bl-banner {
+  margin-bottom: 1rem;
+  padding: 0.75rem 1rem;
+  border-radius: 4px;
+  border: 1px solid #444;
+  background: #151515;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.hidden {
+  display: none;
+}
+
+/* GRID */
+
+.bl-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.bl-cell {
+  background: #141414;
+  border-radius: 6px;
+  border: 1px solid #222;
+  aspect-ratio: 1 / 1;
+  cursor: pointer;
+  transition: background 0.12s ease, transform 0.08s ease, box-shadow 0.12s ease;
+}
+
+.bl-cell:hover {
+  background: #181818;
+}
+
+.bl-cell.active {
+  background: #f5c15c;
+  box-shadow: 0 0 12px rgba(245, 193, 92, 0.6);
+  transform: scale(1.03);
+}
+
+.bl-cell.wrong {
+  background: #7b1f1f;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.4);
+}
+
+/* TIME BAR */
+
+.bl-timebar-container {
+  width: 100%;
+  height: 6px;
+  background: #1a1a1a;
+  border-radius: 999px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.bl-timebar {
+  height: 100%;
+  width: 100%;
+  background: #f5c15c;
+  transition: width 0.1s linear;
+}
+
+/* STATUS */
+
+.bl-status {
+  margin-bottom: 2rem;
+}
+
+/* TELEMETRY */
+
+.bl-telemetry {
+  border-top: 1px solid #222;
+  padding-top: 1.5rem;
+}
+
+.bl-telemetry-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.bl-curve {
+  grid-column: span 2;
+}
+
+@media (max-width: 900px) {
+  .bl-telemetry-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .bl-curve {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .bl-top-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
